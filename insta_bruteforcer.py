@@ -36,7 +36,7 @@ while not found:
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
         # Wait to avoid detection
-        time.sleep(10)  # 10 seconds between attempts
+        time.sleep(0.00000001)  # 10 seconds between attempts
 
         # Check if login successful
         if "challenge" not in driver.current_url and "login" not in driver.current_url:
